@@ -17,42 +17,32 @@
         <!-- Formulário de cadastro -->
         <section class="content-right">
             <img src="img/logo.png" alt="Logo Instagram" class="logo">
-            <p class="intro-text">Cadastre-se para ver fotos e vídeos dos seus amigos.</p>
 
-            <a href="#" class="button-facebook">
-                <img src="img/facebook.svg" alt="Facebook" class="icon-facebook">
-                Entrar com o Facebook
-            </a>
-
+            <form class="register-form" action="#" method="POST">
+                <label for="email">Número do celular ou e-mail</label>
+                <input id="email" type="text" name="email" placeholder="Digite seu e-mail ou celular" required autocomplete="off">
+                
+                <label for="password">Senha</label>
+                <input id="password" type="password" name="password" placeholder="Digite sua senha" required autocomplete="off">
+                
+                <button type="submit" class="button-cadastrar">Cadastrar-se</button>
+            </form>
+            
+            <a href="#" class="forget">Esqueceu a senha?</a>
+            
             <div class="division">
                 <div class="line"></div>
                 <p>OU</p>
                 <div class="line"></div>
             </div>
-
-            <form class="register-form" action="#" method="POST">
-                <label for="email">Número do celular ou e-mail</label>
-                <input id="email" type="text" name="email" placeholder="Digite seu e-mail ou celular" required autocomplete="off">
-
-                <label for="password">Senha</label>
-                <input id="password" type="password" name="password" placeholder="Digite sua senha" required autocomplete="off">
-
-                <label for="fullname">Nome completo</label>
-                <input id="fullname" type="text" name="fullname" placeholder="Digite seu nome completo" required autocomplete="off">
-
-                <label for="username">Nome de usuário</label>
-                <input id="username" type="text" name="username" placeholder="Escolha um nome de usuário" required autocomplete="off">
-
-                <button type="submit" class="button-cadastrar">Cadastrar-se</button>
-            </form>
-
-            <p class="terms">
-                Ao se cadastrar, você concorda com nossos 
-                <a href="#">Termos e Política de Privacidade</a>.
-            </p>
-
-            <p class="login">
-                Tem uma conta? <a href="#">Conecte-se</a>
+            
+            <a href="#" class="button-facebook">
+                <img src="img/facebook.svg" alt="Facebook" class="icon-facebook">
+                Entrar com o Facebook
+            </a>
+            
+            <p class="signUp">
+                Não tem uma conta? <a href="#">Cadastre-se</a>
             </p>
         </section>
     </main>

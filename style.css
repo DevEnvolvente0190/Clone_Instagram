@@ -49,66 +49,12 @@ body {
     padding: 40px;
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    max-width: 350px;
-    width: 100%;
+    width: 350px;
 }
 
 .logo {
     width: 180px;
     margin-bottom: 20px;
-}
-
-.intro-text {
-    font-size: 16px;
-    color: var(--text-gray);
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Botão Facebook */
-.button-facebook {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background-color: var(--facebook);
-    color: var(--white);
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 14px;
-    width: 100%;
-    margin-bottom: 20px;
-    transition: background 0.2s ease-in-out;
-}
-.button-facebook:hover {
-    background-color: #2e406e;
-}
-.icon-facebook {
-    width: 18px;
-    height: 18px;
-    background-color: var(--white);
-    border-radius: 2px;
-    padding: 4px;
-}
-
-/* Divisor OU */
-.division {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-    margin-bottom: 20px;
-    color: var(--text-gray);
-    font-size: 12px;
-}
-.line {
-    flex: 1;
-    height: 1px;
-    background: var(--border-color);
 }
 
 /* Formulário */
@@ -142,30 +88,74 @@ body {
     font-weight: bold;
     font-size: 14px;
     cursor: pointer;
-    transition: background 0.2s ease-in-out;
+    transition: all 0.5s;
     width: 100%;
 }
 .button-cadastrar:hover {
     background-color: #007ac4;
 }
 
-/* Termos e login */
-.terms {
-    font-size: 12px;
+/* Divisor OU */
+.division {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 20px;
     color: var(--text-gray);
-    text-align: center;
-    margin-bottom: 15px;
+    font-size: 12px;
 }
-.terms a {
-    color: var(--primary);
-    text-decoration: none;
+.line {
+    flex: 1;
+    height: 1px;
+    background: var(--border-color);
 }
 
-.login {
+/* Botão Facebook */
+.button-facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--facebook);
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+.button-facebook:hover {
+    background-color: #2e406e;
+}
+.icon-facebook {
+    width: 18px;
+    height: 18px;
+    background-color: var(--white);
+    border-radius: 2px;
+    padding: 4px;
+}
+
+/* Termos e login */
+.forget {
+    font-size: 12px;
+    color: var(--text-gray);
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+.forget:hover{
+    text-decoration: underline;
+}
+
+.signUp {
     font-size: 14px;
     text-align: center;
 }
-.login a {
+.signUp a {
     color: var(--primary);
     font-weight: bold;
     text-decoration: none;
@@ -181,10 +171,5 @@ body {
 
     .content-left {
         display: none; /* Esconde imagem em celulares (igual Instagram real) */
-    }
-
-    .content-right {
-        max-width: 100%;
-        width: 100%;
     }
 }
