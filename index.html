@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Instagram_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Instagram Clone</title>
+</head>
+<body>
+    <main class="container">
+        <!-- Imagem lateral -->
+        <section class="content-left">
+            <img src="img/landing-3x.png" alt="Pré-visualização do Instagram" class="imagem">
+        </section>
+
+        <!-- Formulário de cadastro -->
+        <section class="content-right">
+            <img src="img/logo.png" alt="Logo Instagram" class="logo">
+            <p class="intro-text">Cadastre-se para ver fotos e vídeos dos seus amigos.</p>
+
+            <a href="#" class="button-facebook">
+                <img src="img/facebook.svg" alt="Facebook" class="icon-facebook">
+                Entrar com o Facebook
+            </a>
+
+            <div class="division">
+                <div class="line"></div>
+                <p>OU</p>
+                <div class="line"></div>
+            </div>
+
+            <form class="register-form" action="#" method="POST">
+                <label for="email">Número do celular ou e-mail</label>
+                <input id="email" type="text" name="email" placeholder="Digite seu e-mail ou celular" required autocomplete="off">
+
+                <label for="password">Senha</label>
+                <input id="password" type="password" name="password" placeholder="Digite sua senha" required autocomplete="off">
+
+                <label for="fullname">Nome completo</label>
+                <input id="fullname" type="text" name="fullname" placeholder="Digite seu nome completo" required autocomplete="off">
+
+                <label for="username">Nome de usuário</label>
+                <input id="username" type="text" name="username" placeholder="Escolha um nome de usuário" required autocomplete="off">
+
+                <button type="submit" class="button-cadastrar">Cadastrar-se</button>
+            </form>
+
+            <p class="terms">
+                Ao se cadastrar, você concorda com nossos 
+                <a href="#">Termos e Política de Privacidade</a>.
+            </p>
+
+            <p class="login">
+                Tem uma conta? <a href="#">Conecte-se</a>
+            </p>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,190 @@
+/* Reset e configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary: #0095f6;
+    --facebook: #385185;
+    --border-color: #dbdbdb;
+    --text-gray: #8e8e8e;
+    --background: #fafafa;
+    --white: #fff;
+}
+
+/* Corpo centralizado */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--background);
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+    background: var(--background);
+}
+
+/* Lado esquerdo (imagem) */
+.content-left img {
+    max-height: 500px;
+    width: auto;
+}
+
+/* Lado direito (formulário) */
+.content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--white);
+    padding: 40px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    max-width: 350px;
+    width: 100%;
+}
+
+.logo {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 16px;
+    color: var(--text-gray);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Botão Facebook */
+.button-facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--facebook);
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: background 0.2s ease-in-out;
+}
+.button-facebook:hover {
+    background-color: #2e406e;
+}
+.icon-facebook {
+    width: 18px;
+    height: 18px;
+    background-color: var(--white);
+    border-radius: 2px;
+    padding: 4px;
+}
+
+/* Divisor OU */
+.division {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    color: var(--text-gray);
+    font-size: 12px;
+}
+.line {
+    flex: 1;
+    height: 1px;
+    background: var(--border-color);
+}
+
+/* Formulário */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.register-form label {
+    font-size: 12px;
+    color: var(--text-gray);
+    display: none; /* opcional: pode deixar escondido se preferir */
+}
+.register-form input {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: #fafafa;
+    font-size: 14px;
+}
+
+/* Botão cadastrar */
+.button-cadastrar {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    width: 100%;
+}
+.button-cadastrar:hover {
+    background-color: #007ac4;
+}
+
+/* Termos e login */
+.terms {
+    font-size: 12px;
+    color: var(--text-gray);
+    text-align: center;
+    margin-bottom: 15px;
+}
+.terms a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.login {
+    font-size: 14px;
+    text-align: center;
+}
+.login a {
+    color: var(--primary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    main.container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .content-left {
+        display: none; /* Esconde imagem em celulares (igual Instagram real) */
+    }
+
+    .content-right {
+        max-width: 100%;
+        width: 100%;
+    }
+}
